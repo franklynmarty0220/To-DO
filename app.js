@@ -38,7 +38,7 @@ function createTodoListItem(text){
     const newToDo = document.createElement("li");
     const removeBtn = document.createElement("button");
     newToDo.innerText = text;
-    removeBtn.value = "Complete!";
+    removeBtn.innerText = "Complete!";
 
     newToDo.appendChild(removeBtn);
     return newToDo;
@@ -68,7 +68,5 @@ form.addEventListener('submit',function(e){
     localStorage.setItem("todos", JSON.stringify(savedTodos));
 
 });
-
-
 
 
